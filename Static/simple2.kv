@@ -1,0 +1,32 @@
+#:kivy 1.0
+
+FloatLayout:
+
+    Image:
+        source: "bg2.png"
+        size: self.size
+        pos: self.pos
+        size: root.size
+        allow_stretch: True
+        keep_ratio: False
+
+    GridLayout:
+        rows: 4
+        padding: (150,100)
+
+        Label:
+            text: "Title"
+            size_hint: (.5,.25)
+        Button:
+            text: "Hello world!"
+            size_hint: (.5,.25)
+            padding: (.25,.5)
+            size:(200,200)
+
+        Button:
+            text: "Hello world!"
+            size_hint: (.5,.25)
+
+        Button:
+            text: "Hello world!"
+            size_hint: (.5,.25)
