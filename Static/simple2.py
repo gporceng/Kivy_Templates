@@ -15,6 +15,9 @@ from kivy.app import App
 
 
 class simple2(App):
+    def build(self):
+        self.title = "Label and 3 buttons - By Gregory Porceng"
+
     pass
 
 

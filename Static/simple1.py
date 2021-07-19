@@ -14,7 +14,7 @@ class JobSearch(App):
     def build(self):
         #returns a window object with all it's widgets
 
-        self.title = 'Job Search Visualizer - By Gregory Porceng'
+        self.title = 'Simple Label and Button - By Gregory Porceng'
         self.window = FloatLayout(size=(500,500))
         title = Label(text = 'Hello World',
                         size_hint=(.5,.5),
@@ -25,14 +25,8 @@ class JobSearch(App):
                         pos_hint = {"center_x": 0.5, "center_y":0.5}
                         )
         
-        background_image = Image(
-                        source="bg2.png",
-                        size_hint = (1,1))
 
-        rectangle_one = Rectangle(pos = (10,10), size = (500,500)
-        )
-        self.window.add_widget(rectangle_one)
-        self.window.add_widget(background_image)
+    
         self.window.add_widget(title)
         self.window.add_widget(button_one)
         return self.window
