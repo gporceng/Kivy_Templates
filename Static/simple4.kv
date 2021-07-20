@@ -1,0 +1,50 @@
+
+FloatLayout:
+    Image:
+        source: "bg4.png"
+        size: self.size
+        pos: self.pos
+        size: root.size
+        allow_stretch: True
+        keep_ratio: False
+
+    GridLayout:
+        rows: 3
+        padding: (100,0)
+        
+        Image:
+            source: "logo1.png"
+
+        GridLayout:
+            cols: 2
+            padding: (200,50)
+
+            Label:
+                text:"Hello World"
+
+            Button:
+                text:"Hello World"
+
+            Label:
+                text:"Hello World"
+
+            Button:
+                text:"Hello World"
+
+            Label:
+                text:"Hello World"
+
+            Button:
+                text:"Hello World"
+
+
+        BoxLayout:
+            pos:(0,0)
+            padding:(0,75)
+
+            Label:
+                text: "Terminal text"
+            Button:
+                text:"Run"
+                background_color:'#ff9c9c'
+                background_normal: ""
